@@ -16,6 +16,9 @@ class X {
         let styleRule = rule as CSSStyleRule;
         if (styleRule.selectorText?.startsWith('.' + prefix)) {
             const property = styleRule.style.getPropertyValue('fill');
+            if (property == '') {
+                return;
+            }
             this.regionColorMap.set(styleRule.selectorText, property);
             console.log(property);
         }
