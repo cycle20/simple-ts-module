@@ -40,6 +40,23 @@
             .ult_side1 {
                fill: #f88;
             }
+
+            .ult_inside {
+                fill: #f00;
+            }
+
+            .ult_outside {
+                fill: #00f;
+            }
+
+            .ult_not_inside {
+                fill: #08f;
+            }
+
+            .ult_not_outside {
+                fill: #f04;
+            }
+
         </style>
     </head>
     <body>
@@ -83,6 +100,7 @@
             var testObj = new X();
             testObj.loadRegionColorsFromStyleSheets();
 
+            console.log(testObj);
           </script>
     </body>
 </html>
